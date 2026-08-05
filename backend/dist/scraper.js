@@ -329,9 +329,17 @@ function scrapeWebsite(url) {
         if (!html || isContentThin) {
             let browser;
             try {
+                const websiteExecPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
                 browser = yield puppeteer_extra_1.default.launch({
                     headless: true,
-                    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-blink-features=AutomationControlled"],
+                    executablePath: websiteExecPath,
+                    args: [
+                        "--no-sandbox",
+                        "--disable-setuid-sandbox",
+                        "--disable-blink-features=AutomationControlled",
+                        "--disable-dev-shm-usage",
+                        "--disable-gpu",
+                    ],
                 });
                 const page = yield browser.newPage();
                 yield page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36");
@@ -458,13 +466,18 @@ function scrapeGoogleSearchPlaces(googleUrl) {
         const { cleanUrl, query, startOffset, pageNumber } = buildCleanSearchUrl(googleUrl);
         console.log(`Scraping Google Search Page ${pageNumber} (start=${startOffset}) for: "${query}"`);
         console.log(`Clean URL: ${cleanUrl}`);
+        const isServer = !!process.env.PUPPETEER_EXECUTABLE_PATH;
+        const execPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
         const browser = yield puppeteer_extra_1.default.launch({
-            headless: false, // Set to false to allow manual CAPTCHA solving
-            userDataDir: './user_data', // Keep session so it doesn't open in Guest Mode
+            headless: isServer ? true : false, // headless on server, visible on local for CAPTCHA
+            executablePath: execPath,
+            userDataDir: isServer ? undefined : './user_data', // only use local user_data on local machine
             args: [
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
                 "--disable-blink-features=AutomationControlled",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
                 "--window-size=1280,900",
                 '--lang=en-US,en'
             ],

@@ -317,9 +317,17 @@ export async function scrapeWebsite(url: string): Promise<ScrapeResult> {
   if (!html || isContentThin) {
     let browser: any;
     try {
+      const websiteExecPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
       browser = await puppeteer.launch({
         headless: true,
-        args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-blink-features=AutomationControlled"],
+        executablePath: websiteExecPath,
+        args: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-blink-features=AutomationControlled",
+          "--disable-dev-shm-usage",
+          "--disable-gpu",
+        ],
       });
       const page = await browser.newPage();
       await page.setUserAgent(
@@ -455,13 +463,18 @@ export async function scrapeGoogleSearchPlaces(
   );
   console.log(`Clean URL: ${cleanUrl}`);
 
+  const isServer = !!process.env.PUPPETEER_EXECUTABLE_PATH;
+  const execPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
   const browser = await puppeteer.launch({
-    headless: false, // Set to false to allow manual CAPTCHA solving
-    userDataDir: './user_data', // Keep session so it doesn't open in Guest Mode
+    headless: isServer ? true : false, // headless on server, visible on local for CAPTCHA
+    executablePath: execPath,
+    userDataDir: isServer ? undefined : './user_data', // only use local user_data on local machine
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
       "--disable-blink-features=AutomationControlled",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
       "--window-size=1280,900",
       '--lang=en-US,en'
     ],
