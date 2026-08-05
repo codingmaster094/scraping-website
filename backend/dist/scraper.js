@@ -330,8 +330,9 @@ function scrapeWebsite(url) {
             let browser;
             try {
                 const websiteExecPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
+                const hasDisplay = !!process.env.DISPLAY;
                 browser = yield puppeteer_extra_1.default.launch({
-                    headless: true,
+                    headless: hasDisplay ? false : true,
                     executablePath: websiteExecPath,
                     args: [
                         "--no-sandbox",
@@ -467,11 +468,14 @@ function scrapeGoogleSearchPlaces(googleUrl) {
         console.log(`Scraping Google Search Page ${pageNumber} (start=${startOffset}) for: "${query}"`);
         console.log(`Clean URL: ${cleanUrl}`);
         const isServer = !!process.env.PUPPETEER_EXECUTABLE_PATH;
+        const hasDisplay = !!process.env.DISPLAY;
         const execPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
         const browser = yield puppeteer_extra_1.default.launch({
-            headless: isServer ? true : false, // headless on server, visible on local for CAPTCHA
+            // Use headless:false when a display is available (Xvfb on server, or real screen locally)
+            // This makes Google think it's a real browser and avoids CAPTCHA
+            headless: hasDisplay ? false : true,
             executablePath: execPath,
-            userDataDir: isServer ? undefined : './user_data', // only use local user_data on local machine
+            userDataDir: isServer ? undefined : './user_data',
             args: [
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
