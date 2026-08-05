@@ -29,7 +29,7 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearm
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
-# Set environment variables so Puppeteer uses the system Chrome
+# Set environment variables so Puppeteer uses the installed system Chrome
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 ENV CHROME_PATH=/usr/bin/google-chrome-stable
@@ -40,15 +40,12 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --omit=dev
 
-# Install backend dependencies
+# Install backend runtime dependencies (no dev deps needed - dist/ is pre-built)
 COPY backend/package*.json ./backend/
-RUN cd backend && npm install --omit=dev
+RUN npm install --omit=dev --prefix ./backend
 
-# Copy all source files
+# Copy all application files (including pre-built backend/dist/)
 COPY . .
-
-# Build the TypeScript backend
-RUN cd backend && npm run build
 
 EXPOSE 3000
 
