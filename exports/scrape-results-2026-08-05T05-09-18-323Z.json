@@ -1,0 +1,352 @@
+[
+  {
+    "companyName": "Techstaunch",
+    "companyUrl": "https://www.techstaunch.com/",
+    "companyPhone": "8518711",
+    "companyEmail": "info@techstaunch.com",
+    "service": "Looking for End-to-End Custom Software Development for Businesses? Our expert team delivers tailored software solutions, from concept to deployment, ensuring high-quality, scalable, and secure applications to drive business success.",
+    "technologies": [
+      "React",
+      "Vue.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Laravel",
+      "Google Analytics",
+      "Apache",
+      "Webpack"
+    ]
+  },
+  {
+    "companyName": "iRoid Solutions",
+    "companyUrl": "https://iroidsolutions.com/",
+    "companyPhone": "+917778869939",
+    "companyEmail": "business@iroidsolutions.in",
+    "service": "Looking for a mobile app development company? iRoid Solutions offers iOS, Android, web, and custom software development services. Get a free consultation.",
+    "technologies": [
+      "React",
+      "Vue.js",
+      "Next.js",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Facebook Pixel",
+      "Nginx",
+      "Apache",
+      "Webpack",
+      "Vite"
+    ]
+  },
+  {
+    "companyName": "Narola Infotech",
+    "companyUrl": "https://www.narolainfotech.com/",
+    "companyPhone": "60507919",
+    "companyEmail": "",
+    "service": "US-based software development company. 3000+ Successful projects 1500+ Global clients Your Trusted Partner for Custom Web & Mobile application development",
+    "technologies": [
+      "WordPress",
+      "React",
+      "Angular",
+      "Nuxt",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare"
+    ]
+  },
+  {
+    "companyName": "Elaunch Infotech",
+    "companyUrl": "https://www.elaunchinfotech.com/",
+    "companyPhone": "+919904610846",
+    "companyEmail": "",
+    "service": "ELaunch Solution is a leading Custom Software Development Company aiming to deliver world-class Software Solutions using trending Technologies in the Digital World.",
+    "technologies": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare"
+    ]
+  },
+  {
+    "companyName": "Top IT Company",
+    "companyUrl": "https://daydreamsoft.com/",
+    "companyPhone": "+917573933439",
+    "companyEmail": "contact@daydreamsoft.com",
+    "service": "Daydreamsoft is a leading IT company offering custom software solutions, web & mobile app development, AI & machine learning, game development, and digital transformation services for startups and enterprises. Trusted by 150+ global brands.",
+    "technologies": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Next.js",
+      "Nuxt",
+      "jQuery",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Cloudflare",
+      "Webpack"
+    ]
+  },
+  {
+    "companyName": "UniQual",
+    "companyUrl": "https://uniqualitech.com/",
+    "companyPhone": "+919909790309",
+    "companyEmail": "pritesh@uniqualitech.com",
+    "service": "UniQual is a top AI development and custom software company building scalable web, mobile, and AI solutions for startups and enterprises worldwide. Hire senior engineers today.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Stripe",
+      "TypeScript",
+      "Webpack"
+    ]
+  },
+  {
+    "companyName": "CoderKube Technologies",
+    "companyUrl": "https://coderkube.com/",
+    "companyPhone": "253448842",
+    "companyEmail": "info@coderkube.com",
+    "service": "CoderKube is a top-rated web design, web development, application development company in UK & USA with the best SEO and Digital marketing services.",
+    "technologies": [
+      "WordPress",
+      "React",
+      "Angular",
+      "Vue.js",
+      "Next.js",
+      "Nuxt",
+      "jQuery",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare",
+      "PayPal",
+      "Webpack",
+      "Vite"
+    ]
+  },
+  {
+    "companyName": "WeeTech Solution Pvt Ltd",
+    "companyUrl": "https://www.weetechsolution.com/",
+    "companyPhone": "+919276888885",
+    "companyEmail": "info@weetechsolution.com",
+    "service": "WeeTech Solution Pvt Ltd is one of the best in top 10 IT companies in Surat India that provides Software Development Services, Web App Development, Mobile App Development and E-commerce site development.",
+    "technologies": [
+      "React",
+      "Angular",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics"
+    ]
+  },
+  {
+    "companyName": "NatRIX Software Private Limited Surat",
+    "companyUrl": "https://natrixsoftware.com/",
+    "companyPhone": "+919426665433",
+    "companyEmail": "info@natrixsoftware.com",
+    "service": "Build scalable web, mobile, AI, and custom software solutions with NatRIX Software. 12+ years of experience, 1500+ successful projects, and 300+ satisfied clients worldwide.",
+    "technologies": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Next.js",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare"
+    ]
+  },
+  {
+    "companyName": "Crest Infosystems Pvt Ltd",
+    "companyUrl": "https://www.crestinfosystems.com/",
+    "companyPhone": "+918141333165",
+    "companyEmail": "",
+    "service": "Drive growth with AWS cloud, AI, DevOps, data engineering, and custom software development services from Crest Infosystems.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare",
+      "Vite"
+    ]
+  },
+  {
+    "companyName": "Bigscal",
+    "companyUrl": "https://www.bigscal.com/",
+    "companyPhone": "+918000800110",
+    "companyEmail": "contact@bigscal.com",
+    "service": "Bigscal transform your ideas into reality with a AI Software Development Company. Learn how they can streamline your development process.",
+    "technologies": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Next.js",
+      "jQuery",
+      "Bootstrap",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare",
+      "TypeScript"
+    ]
+  },
+  {
+    "companyName": "VPN Infotech",
+    "companyUrl": "https://vpninfotech.com/",
+    "companyPhone": "+919978622301",
+    "companyEmail": "http://sales@vpninfotech.com",
+    "service": "VPN Infotech as one of the leading IT software development company in Surat India. They provide Offshore website, mobile application and software development services",
+    "technologies": [
+      "WordPress",
+      "jQuery",
+      "PHP",
+      "Laravel",
+      "Google Analytics"
+    ]
+  },
+  {
+    "companyName": "Best IT Solutions Company in Surat, India",
+    "companyUrl": "https://netsolitsolution.com/",
+    "companyPhone": "+912612265535",
+    "companyEmail": "mail@netsolitsolution.com",
+    "service": "Best IT Solutions Company in Surat, India - Official Website",
+    "technologies": [
+      "WordPress",
+      "React",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "Laravel",
+      "Google Analytics",
+      "Cloudflare",
+      "Stripe"
+    ]
+  },
+  {
+    "companyName": "Quantum IT Solution",
+    "companyUrl": "https://qitsolution.co.in/",
+    "companyPhone": "",
+    "companyEmail": "",
+    "service": "Quantum IT Solution specializes in SAP B1, SAP S4 HANA, SAP add-ons, and web-based SAP integration solutions to streamline business processes.",
+    "technologies": [
+      "Cloudflare"
+    ]
+  },
+  {
+    "companyName": "Zluck Solutions",
+    "companyUrl": "https://zluck.com/",
+    "companyPhone": "+13025650544",
+    "companyEmail": "info@zluck.com",
+    "service": "We help funded startups ship AI-powered MVPs and custom software in weeks, not months. 12 years of work, 40+ engineers, global clients. Get a free scoping call.",
+    "technologies": [
+      "React",
+      "jQuery",
+      "PHP",
+      "Google Analytics"
+    ]
+  },
+  {
+    "companyName": "Aghadi Infotech",
+    "companyUrl": "https://aghadiinfotech.com/",
+    "companyPhone": "+91997955408",
+    "companyEmail": "sales@aghadiinfotech.com",
+    "service": "Website Development Company offering custom web development, WordPress, Elementor, UI/UX design, e-commerce & digital marketing/SEO services.",
+    "technologies": [
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "Google Analytics",
+      "Webpack"
+    ]
+  },
+  {
+    "companyName": "Sensussoft",
+    "companyUrl": "https://sensussoft.com/",
+    "companyPhone": "+919157660111",
+    "companyEmail": "info@sensussoft.com",
+    "service": "Premium IT and AI consultancy firm specializing in digital transformation and mission-critical engineering.",
+    "technologies": [
+      "React",
+      "Angular",
+      "Next.js",
+      "Node.js",
+      "Google Analytics",
+      "TypeScript"
+    ]
+  },
+  {
+    "companyName": "Hunani Infotech",
+    "companyUrl": "https://hunaniinfotech.com/",
+    "companyPhone": "9173688011",
+    "companyEmail": "http://info@hunaniinfotech.com%20",
+    "service": "seo Expert",
+    "technologies": [
+      "WordPress",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "Google Analytics"
+    ]
+  },
+  {
+    "companyName": "IdeoPlant",
+    "companyUrl": "https://www.ideoplant.com/",
+    "companyPhone": "+919737894513",
+    "companyEmail": "grow@ideoplant.com",
+    "service": "IdeoPlant builds AI-powered applications, custom software, and scalable web platforms for startups and enterprises. Transform your idea into a digital product.",
+    "technologies": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Google Analytics",
+      "TypeScript",
+      "Vite"
+    ]
+  },
+  {
+    "companyName": "GroveTech Solutions",
+    "companyUrl": "https://grovetechs.com/",
+    "companyPhone": "+918980803350",
+    "companyEmail": "sales@grovetechs.com",
+    "service": "Grovetech Solutions pioneers advanced software development, AI innovation, automation, and comprehensive IT solutions worldwide. Empower your business with a leader in digital transformation.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Google Analytics",
+      "TypeScript"
+    ]
+  }
+]

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Google Places Scraper</h1>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </header>
+        <main>
+            <div class="input-section">
+                <input type="text" id="urlInput" placeholder="Enter Google Search Places URL">
+                <button id="startScrapingBtn">Start Scraping</button>
+            </div>
+            <div class="progress-section">
+                <div id="loader" class="loader" style="display: none;"></div>
+                <div id="progressBarContainer" style="display: none;">
+                    <div id="progressBar"></div>
+                </div>
+                <div id="status"></div>
+            </div>
+            <div class="results-section">
+                <div class="results-header">
+                    <h2>Results</h2>
+                    <div class="export-buttons">
+                        <button id="exportCsvBtn">Export CSV</button>
+                        <button id="exportExcelBtn">Export Excel</button>
+                        <button id="exportJsonBtn">Export JSON</button>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search results...">
+                </div>
+                <p>Total companies found: <span id="totalCompanies">0</span></p>
+                <div class="table-container">
+                    <table id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th>Company Name</th>
+                                <th>Website</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Services</th>
+                                <th>Technologies</th>
+                                <th>Framework</th>
+                                <th>CMS</th>
+                                <th>Social Links</th>
+                                <th>Google Rating</th>
+                                <th>Reviews</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsBody">
+                            <!-- Results will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <button id="prevPageBtn">Previous</button>
+                    <span id="pageInfo">Page 1 of 1</span>
+                    <button id="nextPageBtn">Next</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
